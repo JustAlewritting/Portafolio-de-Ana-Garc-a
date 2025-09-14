@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+
+:root {
+    --color-primario: #000000;
+    --color-secundario:  #F6F6F6;
+    --color-terciario:  #22D4FD;
+
+    --fuente-montserrat: 'Montserrat', sans serif; 
+    --fuente-krona: 'Krona One', sans serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
+
+.titulo-destaque {
+    color: var(--color-terciario) ;
+}
+
+.presentacion {
+    padding: 4% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:80px;
+    
+}
+
+.presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 2.2rem;
+    font-family: var(--fuente-krona);
+}
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column; /*para poner todo en una columna*/
+    gap: 20px; /*Para colocar espacio entre cada cosa*/
+    justify-content:space-between; 
+    align-items: center; /*Para centrarlos (MUY IMPORTANTE :'V)*/
+}
+
+.Accede_a_mis_redes{ /*Titulo  encima de las redes*/
+    font-family:"Krona One", sans-serif;
+    font-size:1.25rem;
+    font-weight:400;
+}
+
+.presentacion__enlaces__link{
+    
+    width: 50%;
+    border-radius: 25px;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--color-terciario);
+    font-family:var(--fuente-montserrat);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion__enlaces__link:hover{
+background-color: var(--color-primario);
+transform: scale(1.07);
+transition: transform 0.2s ease;
+}
+.Presentacion__imagen {
+width: 100%;
+max-width: 350px;
+height: auto;
+margin: 0 auto; /* la centra */
+display: block; /* para que respete el margin */
+}
+
+.footer{
+    display:flex;
+    justify-content:center;
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    padding:24px;
+    text-align:center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family:var(--fuente-montserrat);
+}
+
+.Header{
+padding: 4% 0% 0% 10%;
+}
+.Header_menu{
+display:flex;
+gap: 80px;
+}
+.Header_menu_link{
+    font-family:var(--fuente-montserrat);
+    font-size:1.5rem;
+    font-weight: 600px;
+    color: var(--color-terciario);
+    flex-direction:row;
+    padding: 35px;
+    text-decoration:none;
+}
+
+@media(max-width: 1250px ){
+    .presentacion {
+    flex-direction: column-reverse;
+    padding: 4% 10%;
+                                    }
+        .Header{
+        padding: 4%;
+        justify-content:center;
+                                }
+            .Header_menu{
+                justify-content:center;
+                            }   
+                .Header_menu_link{ 
+                    font-size:1.55rem;
+                                    }
+.presentacion__contenido{
+    width:auto;
+}
+
+                }
+
